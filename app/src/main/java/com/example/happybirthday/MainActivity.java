@@ -18,14 +18,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Log.d(LOG_TAG, "-------");
         Log.d(LOG_TAG, "onCreate");
-        final Button b = findViewById(R.id.button);
+        final Button b = (Button) findViewById(R.id.button);
         b.setOnClickListener(new View.OnClickListener() {
                                  public void onClick(View v) {
                                      text.setText("El primer memillo");
                                  }
                              }
         );
-        final Button b2 = findViewById(R.id.button2);
+        final Button b2 = (Button) findViewById(R.id.button2);
         b2.setOnClickListener(new View.OnClickListener() {
                                  public void onClick(View v) {
                                      text.setText("El segundo memillo");
